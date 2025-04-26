@@ -1,4 +1,4 @@
-package com.robbi5.notificationlightbridge
+package de.pccoholic.pretix.notificationlightbridge
 
 import android.content.BroadcastReceiver
 import android.content.Context
@@ -22,16 +22,16 @@ class PretixReceiver : BroadcastReceiver() {
         val led = LED()
         when (intent.action) {
             INTENT_TURN_OFF -> {
-                led.send(LED.TURN_OFF)
+                led.send(LED.COLOR_WHITE)
             }
             INTENT_SUCCESS -> {
-                led.send(listOf(LED.TURN_ON, LED.COLOR_GREEN))
+                led.send(LED.COLOR_GREEN)
             }
             INTENT_ERROR -> {
-                led.send(listOf(LED.TURN_ON, LED.COLOR_RED))
+                led.send(LED.COLOR_RED)
             }
             INTENT_ATTENTION -> {
-                led.send(listOf(LED.TURN_ON, LED.COLOR_YELLOW))
+                led.send(LED.COLOR_YELLOW)
             }
         }
     }

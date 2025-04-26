@@ -1,4 +1,4 @@
-package com.robbi5.notificationlightbridge
+package de.pccoholic.pretix.notificationlightbridge
 
 import android.content.BroadcastReceiver
 import android.content.Context
@@ -6,9 +6,9 @@ import android.content.Intent
 
 class SetColorReceiver : BroadcastReceiver() {
     companion object {
-        const val INTENT_TURN_OFF = "com.robbi5.notificationlightbridge.TURN_OFF"
-        const val INTENT_SET_COLOR = "com.robbi5.notificationlightbridge.SET_COLOR"
-        const val INTENT_SET_RAW = "com.robbi5.notificationlightbridge.SET_RAW"
+        const val INTENT_TURN_OFF = "de.pccoholic.pretix.notificationlightbridge.TURN_OFF"
+        const val INTENT_SET_COLOR = "de.pccoholic.pretix.notificationlightbridge.SET_COLOR"
+        const val INTENT_SET_RAW = "de.pccoholic.pretix.notificationlightbridge.SET_RAW"
         val intent_actions = listOf(
             INTENT_TURN_OFF,
             INTENT_SET_COLOR,

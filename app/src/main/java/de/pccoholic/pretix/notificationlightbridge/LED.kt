@@ -1,4 +1,4 @@
-package com.robbi5.notificationlightbridge
+package de.pccoholic.pretix.notificationlightbridge
 
 import android.graphics.Color
 import android.util.Log
